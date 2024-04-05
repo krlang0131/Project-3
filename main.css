@@ -1,4 +1,8 @@
 #header {
     text-align:center;
-
+}
+#season-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
