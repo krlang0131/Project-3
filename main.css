@@ -6,3 +6,11 @@
     flex-direction: row;
     justify-content: flex-end;
 }
+#season-buttons button {
+    margin: 20px;
+    
+}
+#interact {
+    border: solid black 2px;
+    margin: 100px;
+}
