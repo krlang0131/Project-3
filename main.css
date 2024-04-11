@@ -1,6 +1,14 @@
 #header {
     text-align:center;
 }
+
+#season-buttons .spring-on,
+#season-buttons .summer-on,
+#season-buttons .fall-on,
+#season-buttons .winter-on {
+    display: none;
+}
+
 #season-buttons {
     display: flex;
     flex-direction: row;
@@ -13,17 +21,24 @@
 #season-buttons button img {
         width: 50px;
 }
+
+
+
 #interact {
     display: flex;
     justify-content: center;
 }
-.interact-box {
+
+#interact-box {
     border: solid black 2px;
-    height: 710px;
     width: 1014px;
+    aspect-ratio: 1014/576;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.interact-box .play-button {
+#interact-box .play-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,39 +46,61 @@
     
 }
 
-.interact-box .play-button img {
+
+#interact-box .play-button img {
     max-width: 100%;
     max-height: 100%;
 }
-.spring {
-    background-image: url("images/spring.jpg");
+
+.season {
     background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
+    background-size: cover;
     justify-content: center;
     align-items: flex-end;
+    flex-basis: 100%;
+    position: relative;
+}
+
+.spring,
+.summer,
+.fall,
+.winter {
+    display: none;
+}
+
+
+.spring {
+    background-image: url("images/spring.jpg");
 }
 .summer {
     background-image: url("images/summer.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
 }
 .fall {
     background-image: url("images/fall.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
 }
 .winter {
     background-image: url("images/winter.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+}
+
+#interact-box.show-spring .play-button,
+#interact-box.show-summer .play-button,
+#interact-box.show-fall .play-button,
+#interact-box.show-winter .play-button {
+    display: none;
+}
+
+#interact-box.show-spring .spring {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+}
+
+#interact-box.show-summer .summer {
+    display: flex;
+}
+
+#interact-box.show-fall .fall {
+    display: flex;
+}
+
+#interact-box.show-winter .winter {
+    display: flex;
 }
