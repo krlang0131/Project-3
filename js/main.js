@@ -1,22 +1,37 @@
-
-
+// start play button
 $(".play-button").click( function() {
     $("#interact-box").removeClass();
     $("#interact-box").toggleClass("show-spring");
   })
+  // spring
 $(".spring-off").click( function() {
     $("#interact-box").removeClass();
+    $("#season-buttons").removeClass();
     $("#interact-box").toggleClass("show-spring");
+    $("#season-buttons").toggleClass("spring-on-viewed");
+    $("#season-buttons").toggleClass("spring-off-invis");
   })
+  // summer
 $(".summer-off").click( function() {
     $("#interact-box").removeClass();
+    $("#season-buttons").removeClass();
     $("#interact-box").toggleClass("show-summer");
+    $("#season-buttons").toggleClass("summer-on-viewed");
+    $("#season-buttons").toggleClass("summer-off-invis");
   })
+  // fall
 $(".fall-off").click( function() {
     $("#interact-box").removeClass();
+    $("#season-buttons").removeClass();
     $("#interact-box").toggleClass("show-fall");
+    $("#season-buttons").toggleClass("fall-on-viewed");
+    $("#season-buttons").toggleClass("fall-off-invis");
   })
+  // winter
 $(".winter-off").click( function() {
     $("#interact-box").removeClass();
+    $("#season-buttons").removeClass();
     $("#interact-box").toggleClass("show-winter");
+    $("#season-buttons").toggleClass("winter-on-viewed");
+    $("#season-buttons").toggleClass("winter-off-invis");
   })

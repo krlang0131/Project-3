@@ -9,6 +9,20 @@
     display: none;
 }
 
+#season-buttons.spring-off-invis .spring-off,
+#season-buttons.summer-off-invis .summer-off,
+#season-buttons.fall-off-invis .fall-off,
+#season-buttons.winter-off-invis .winter-off {
+    display: none;
+}
+
+#season-buttons.spring-on-viewed .spring-on,
+#season-buttons.summer-on-viewed .summer-on,
+#season-buttons.fall-on-viewed .fall-on,
+#season-buttons.winter-on-viewed .winter-on {
+    display: flex;
+}
+
 #season-buttons {
     display: flex;
     flex-direction: row;
@@ -22,7 +36,7 @@
         width: 50px;
 }
 
-
+/* display interact below */
 
 #interact {
     display: flex;
