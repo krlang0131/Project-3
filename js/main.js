@@ -35,3 +35,26 @@ $(".winter-off").click( function() {
     $("#season-buttons").toggleClass("winter-on-viewed");
     $("#season-buttons").toggleClass("winter-off-invis");
   })
+  // volcano
+  $(".volcano-off").click( function() {
+    $("#interact-box").removeClass();
+    $("#season-buttons").removeClass();
+    $("#interact-box").toggleClass("show-volcano");
+    $("#season-buttons").toggleClass("volcano-on-viewed");
+    $("#season-buttons").toggleClass("volcano-off-invis");
+  })
+  $(".umbrella-button").click( function() {
+    $("#interact-box").toggleClass("show-umbrella");
+  })
+  $(".rain-button").click( function() {
+    if (#interact-box === "spring" || season === "summer" || season === "fall") {
+      if (isActive) {
+        $("#interact-box").toggleClass("show-rain");
+      }
+    } else if (#interact-box === "winter") {
+      if (isActive) {
+        $("#interact-box").toggleClass("show-snow");
+    }
+  }
+  })
+

@@ -5,21 +5,24 @@
 #season-buttons .spring-on,
 #season-buttons .summer-on,
 #season-buttons .fall-on,
-#season-buttons .winter-on {
+#season-buttons .winter-on,
+#season-buttons .volcano-on {
     display: none;
 }
 
 #season-buttons.spring-off-invis .spring-off,
 #season-buttons.summer-off-invis .summer-off,
 #season-buttons.fall-off-invis .fall-off,
-#season-buttons.winter-off-invis .winter-off {
+#season-buttons.winter-off-invis .winter-off,
+#season-buttons.volcano-off-invis .volcano-off {
     display: none;
 }
 
 #season-buttons.spring-on-viewed .spring-on,
 #season-buttons.summer-on-viewed .summer-on,
 #season-buttons.fall-on-viewed .fall-on,
-#season-buttons.winter-on-viewed .winter-on {
+#season-buttons.winter-on-viewed .winter-on,
+#season-buttons.volcano-on-viewed .volcano-on {
     display: flex;
 }
 
@@ -36,7 +39,58 @@
         width: 50px;
 }
 
-/* display interact below */
+/* left interact buttons below */
+#interact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: felx-start;
+    margin-bottom: 200px;
+
+}
+#interact-buttons button {
+    margin: 20px;
+
+}
+#interact-buttons img {
+    width: 50px;
+}
+
+/* interact box below */
+
+/* #interact-box .rain-gif,
+#interact-box .snow-gif,
+#interact-box .umbrella {
+    display: none;
+} */
+/* #interact-box.show-rain .rain-gif,
+#interact-box.show-snow .snow-gif,
+#interact-box.show-umbrella .umbrella {
+    display: flex;
+} */
+
+
+.umbrella {
+    position: absolute;
+    width: 250px;
+    top: 0%;
+    left: 30%; 
+    z-index: 2;
+}
+
+.rain-gif, .snow-gif {
+    width: 1014px;
+    height: 576px;
+    object-fit: cover;
+    z-index: 5;
+}
+.character-spring, 
+.character-summer, 
+.character-fall, 
+.character-winter,
+.character-volcano {
+    position: absolute;
+    left: 35%; 
+}
 
 #interact {
     display: flex;
@@ -50,6 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #interact-box .play-button {
@@ -57,7 +112,6 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    
 }
 
 
@@ -78,7 +132,8 @@
 .spring,
 .summer,
 .fall,
-.winter {
+.winter,
+.volcano {
     display: none;
 }
 
@@ -95,26 +150,22 @@
 .winter {
     background-image: url("images/winter.jpg");
 }
+.volcano {
+    background-image: url("images/volcano.jpg");
+}
 
 #interact-box.show-spring .play-button,
 #interact-box.show-summer .play-button,
 #interact-box.show-fall .play-button,
-#interact-box.show-winter .play-button {
+#interact-box.show-winter .play-button,
+#interact-box.show-volcano .play-button {
     display: none;
 }
 
-#interact-box.show-spring .spring {
-    display: flex;
-}
-
-#interact-box.show-summer .summer {
-    display: flex;
-}
-
-#interact-box.show-fall .fall {
-    display: flex;
-}
-
-#interact-box.show-winter .winter {
+#interact-box.show-spring .spring,
+#interact-box.show-summer .summer,
+#interact-box.show-fall .fall,
+#interact-box.show-winter .winter,
+#interact-box.show-volcano .volcano {
     display: flex;
 }
