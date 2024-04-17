@@ -57,13 +57,16 @@
 
 /* interact box below */
 
-/* #interact-box .rain-gif,
+#interact-box .rain-gif,
 #interact-box .snow-gif,
+#interact-box .lava-gif,
 #interact-box .umbrella {
     display: none;
-} */
+}
+
 #interact-box.show-rain .rain-gif,
 #interact-box.show-snow .snow-gif,
+#interact-box.show-lava .lava-gif,
 #interact-box.show-umbrella .umbrella {
     display: flex;
 }
@@ -77,7 +80,7 @@
     z-index: 2;
 }
 
-.rain-gif, .snow-gif {
+.rain-gif, .snow-gif, .lava-gif {
     width: 1014px;
     height: 576px;
     object-fit: cover;
@@ -127,6 +130,7 @@
     align-items: flex-end;
     flex-basis: 100%;
     position: relative;
+    height: 100%;
 }
 
 .spring,
