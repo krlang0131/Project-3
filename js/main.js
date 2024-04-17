@@ -49,10 +49,16 @@ $(".winter-off").click( function() {
   })
   // rain/snow
   $(".rain-button").click( function() {
-    if ("#interact-box" === "spring" || season === "summer" || season === "fall") {
+    if (
+      $("#interact-box").hasClass("show-spring") ||
+      $("#interact-box").hasClass("show-summer") ||
+      $("#interact-box").hasClass("show-fall")
+      ) {
         $("#interact-box").toggleClass("show-rain");
-      } else if ("#interact-box" === "winter") {
+      } else if ($("#interact-box").hasClass("show-winter")) {
         $("#interact-box").toggleClass("show-snow");
-    }
+      } else if ($("#interact-box").hasClass("show-volcano")) {
+      $("#interact-box").toggleClass("show-lava");
+      }
   })
 
