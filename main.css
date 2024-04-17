@@ -62,11 +62,11 @@
 #interact-box .umbrella {
     display: none;
 } */
-/* #interact-box.show-rain .rain-gif,
+#interact-box.show-rain .rain-gif,
 #interact-box.show-snow .snow-gif,
 #interact-box.show-umbrella .umbrella {
     display: flex;
-} */
+}
 
 
 .umbrella {
