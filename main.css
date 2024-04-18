@@ -6,7 +6,8 @@
 #season-buttons .summer-on,
 #season-buttons .fall-on,
 #season-buttons .winter-on,
-#season-buttons .volcano-on {
+#season-buttons .volcano-on,
+#season-buttons .underwater-on {
     display: none;
 }
 
@@ -14,7 +15,8 @@
 #season-buttons.summer-off-invis .summer-off,
 #season-buttons.fall-off-invis .fall-off,
 #season-buttons.winter-off-invis .winter-off,
-#season-buttons.volcano-off-invis .volcano-off {
+#season-buttons.volcano-off-invis .volcano-off,
+#season-buttons.underwater-off-invis .underwater-off {
     display: none;
 }
 
@@ -22,7 +24,8 @@
 #season-buttons.summer-on-viewed .summer-on,
 #season-buttons.fall-on-viewed .fall-on,
 #season-buttons.winter-on-viewed .winter-on,
-#season-buttons.volcano-on-viewed .volcano-on {
+#season-buttons.volcano-on-viewed .volcano-on,
+#season-buttons.underwater-on-viewed .underwater-on {
     display: flex;
 }
 
@@ -55,19 +58,19 @@
     width: 50px;
 }
 
-/* interact box below */
-
 #interact-box .rain-gif,
 #interact-box .snow-gif,
 #interact-box .lava-gif,
-#interact-box .umbrella {
+#interact-box .umbrella,
+#interact-box .fish-gif {
     display: none;
 }
 
 #interact-box.show-rain .rain-gif,
 #interact-box.show-snow .snow-gif,
 #interact-box.show-lava .lava-gif,
-#interact-box.show-umbrella .umbrella {
+#interact-box.show-umbrella .umbrella,
+#interact-box.show-fish .fish-gif {
     display: flex;
 }
 
@@ -80,17 +83,20 @@
     z-index: 2;
 }
 
-.rain-gif, .snow-gif, .lava-gif {
+.rain-gif, .snow-gif, .lava-gif, .fish-gif {
     width: 1014px;
     height: 576px;
     object-fit: cover;
     z-index: 5;
 }
+
+/* interact box below */
 .character-spring, 
 .character-summer, 
 .character-fall, 
 .character-winter,
-.character-volcano {
+.character-volcano,
+.character-underwater {
     position: absolute;
     left: 35%; 
 }
@@ -137,7 +143,8 @@
 .summer,
 .fall,
 .winter,
-.volcano {
+.volcano,
+.underwater {
     display: none;
 }
 
@@ -157,12 +164,16 @@
 .volcano {
     background-image: url("images/volcano.jpg");
 }
+.underwater {
+    background-image: url("images/underwater.jpg");
+}
 
 #interact-box.show-spring .play-button,
 #interact-box.show-summer .play-button,
 #interact-box.show-fall .play-button,
 #interact-box.show-winter .play-button,
-#interact-box.show-volcano .play-button {
+#interact-box.show-volcano .play-button,
+#interact-box.show-underwater .play-button {
     display: none;
 }
 
@@ -170,6 +181,7 @@
 #interact-box.show-summer .summer,
 #interact-box.show-fall .fall,
 #interact-box.show-winter .winter,
-#interact-box.show-volcano .volcano {
+#interact-box.show-volcano .volcano,
+#interact-box.show-underwater .underwater {
     display: flex;
 }

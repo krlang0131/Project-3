@@ -43,10 +43,25 @@ $(".winter-off").click( function() {
     $("#season-buttons").toggleClass("volcano-on-viewed");
     $("#season-buttons").toggleClass("volcano-off-invis");
   })
+    // underwater
+    $(".underwater-off").click( function() {
+      $("#interact-box").removeClass();
+      $("#season-buttons").removeClass();
+      $("#interact-box").toggleClass("show-underwater");
+      $("#season-buttons").toggleClass("underwater-on-viewed");
+      $("#season-buttons").toggleClass("underwater-off-invis");
+    })
+  
   // umbrella
   $(".umbrella-button").click( function() {
     $("#interact-box").toggleClass("show-umbrella");
   })
+    // fish
+    $(".fish-button").click( function() {
+      if ($("#interact-box").hasClass("show-underwater")) {
+          $("#interact-box").toggleClass("show-fish");
+      }
+    })
   // rain/snow
   $(".rain-button").click( function() {
     if (
