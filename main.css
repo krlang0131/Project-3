@@ -70,7 +70,9 @@
 #interact-box .rain-gif,
 #interact-box .snow-gif,
 #interact-box .lava-gif,
+#interact-box .bubbles-gif,
 #interact-box .umbrella,
+#interact-box .scuba-tank,
 #interact-box .bunny-gif,
 #interact-box .birds-gif,
 #interact-box .fox-gif,
@@ -83,7 +85,9 @@
 #interact-box.show-rain .rain-gif,
 #interact-box.show-snow .snow-gif,
 #interact-box.show-lava .lava-gif,
+#interact-box.show-bubbles .bubbles-gif,
 #interact-box.show-umbrella .umbrella,
+#interact-box.show-scuba-tank .scuba-tank,
 #interact-box.show-bunny .bunny-gif,
 #interact-box.show-birds .birds-gif,
 #interact-box.show-fox .fox-gif,
@@ -94,27 +98,42 @@
 }
 
 
-.umbrella {
+.umbrella, .scuba-tank {
     position: absolute;
     width: 250px;
     top: 0%;
     left: 30%; 
     z-index: 2;
 }
+.scuba-tank {
+    position: absolute;
+    width: 250px;
+    top: 75px;
+    left: 250px; 
+    z-index: 2;
+}
 
-.rain-gif, .snow-gif, .lava-gif  {
+.rain-gif, .snow-gif, .lava-gif, .bubbles-gif  {
     position: absolute;
     width: 1114px;
     height: 676px;
     object-fit: cover;
     z-index: 5;
 }
-.bunny-gif, .fish-gif, .deer-gif {    
+.fish-gif, .deer-gif {    
     position: absolute;
     z-index: 3;
     object-fit: cover;
     width: 1114px;
     height: 676px;
+}
+.bunny-gif {
+    position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+    left: 200px;
 }
 .fox-gif {
     position: absolute;
@@ -136,10 +155,10 @@
 .dino-gif {
     position: absolute;
     z-index: 3;
-    width: 200px;
+    width: 300px;
     height: auto;
-    bottom: 20px;
-    left: 100px;
+    bottom: 50px;
+    right: 250px;
 }
 
 /* interact box below */
