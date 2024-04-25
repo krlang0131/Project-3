@@ -56,12 +56,27 @@ $(".winter-off").click( function() {
   $(".umbrella-button").click( function() {
     $("#interact-box").toggleClass("show-umbrella");
   })
-    // fish
+    // animal
+
     $(".fish-button").click( function() {
-      if ($("#interact-box").hasClass("show-underwater")) {
-          $("#interact-box").toggleClass("show-fish");
-      }
+      if (
+        $("#interact-box").hasClass("show-spring")) {
+          $("#interact-box").toggleClass("show-bunny");
+        } else if ($("#interact-box").hasClass("show-summer")) {
+          $("#interact-box").toggleClass("show-birds");
+        } else if ($("#interact-box").hasClass("show-fall")) {
+          $("#interact-box").toggleClass("show-fox");
+        } else if ($("#interact-box").hasClass("show-winter")) {
+        $("#interact-box").toggleClass("show-deer");
+        } else if ($("#interact-box").hasClass("show-volcano")) {
+          $("#interact-box").toggleClass("show-dino");
+        } else if ($("#interact-box").hasClass("show-underwater")) {
+            $("#interact-box").toggleClass("show-fish");
+        }
     })
+  
+
+
   // rain/snow
   $(".rain-button").click( function() {
     if (

@@ -1,5 +1,14 @@
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 #header {
     text-align:center;
+    font-family: 'Jersey 20', sans-serif;
+    font-size: 30px;
 }
 
 #season-buttons .spring-on,
@@ -33,7 +42,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 200px;
+    margin-right: 476px;
 }
 #season-buttons button {
     margin: 20px;
@@ -62,6 +71,11 @@
 #interact-box .snow-gif,
 #interact-box .lava-gif,
 #interact-box .umbrella,
+#interact-box .bunny-gif,
+#interact-box .birds-gif,
+#interact-box .fox-gif,
+#interact-box .deer-gif,
+#interact-box .dino-gif,
 #interact-box .fish-gif {
     display: none;
 }
@@ -70,6 +84,11 @@
 #interact-box.show-snow .snow-gif,
 #interact-box.show-lava .lava-gif,
 #interact-box.show-umbrella .umbrella,
+#interact-box.show-bunny .bunny-gif,
+#interact-box.show-birds .birds-gif,
+#interact-box.show-fox .fox-gif,
+#interact-box.show-deer .deer-gif,
+#interact-box.show-dino .dino-gif,
 #interact-box.show-fish .fish-gif {
     display: flex;
 }
@@ -83,11 +102,44 @@
     z-index: 2;
 }
 
-.rain-gif, .snow-gif, .lava-gif, .fish-gif {
-    width: 1014px;
-    height: 576px;
+.rain-gif, .snow-gif, .lava-gif  {
+    position: absolute;
+    width: 1114px;
+    height: 676px;
     object-fit: cover;
     z-index: 5;
+}
+.bunny-gif, .fish-gif, .deer-gif {    
+    position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    width: 1114px;
+    height: 676px;
+}
+.fox-gif {
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    height: auto;
+    left: 50px;
+    bottom: 20px;
+}
+.birds-gif {
+    position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    width: 1114px;
+    height: 376px;
+    top: 0;
+}
+
+.dino-gif {
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: auto;
+    bottom: 20px;
+    left: 100px;
 }
 
 /* interact box below */
@@ -108,8 +160,8 @@
 
 #interact-box {
     border: solid black 2px;
-    width: 1014px;
-    aspect-ratio: 1014/576;
+    width: 1114px;
+    aspect-ratio: 1114/676;
     display: flex;
     align-items: center;
     justify-content: center;
